@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <section class="forms">
+      <form class="form" id="sign-up" action="#" method="get" novalidate>
+        <div class="input-field">
+          <label for="username">Enter User Name</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="user name"
+          />
+          <span class="error-message" id="username-error"></span>
+        </div>
+
+        <div class="input-field">
+          <label for="email">Enter Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email"
+            required
+          />
+          <span class="error-message" id="email-error"></span>
+        </div>
+
+        <div class="input-field">
+          <label for="password">Enter Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="password"
+            minlength="5"
+          />
+          <span class="error-message" id="password-error"></span>
+        </div>
+
+        <div class="input-field">
+          <label for="tel">Personal Number</label>
+          <input
+            type="tel"
+            id="personNum"
+            name="tel"
+            placeholder="Enter your Personal number"
+            required
+            maxlength="11"
+          />
+          <span class="error-message" id="personNum-error"></span>
+        </div>
+
+        <div class="input-field">
+          <label for="mobileNum">Mobile Number</label>
+          <input
+            type="tel"
+            id="mobileNum"
+            name="tel"
+            placeholder="Enter your number"
+            required
+            maxlength="9"
+          />
+          <span class="error-message" id="mobileNum-error"></span>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Job description:</label
+          >
+          <textarea
+            id="textarea"
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            maxlength="50"
+          ></textarea>
+          <span class="error-message" id="textarea-error"></span>
+        </div>
+
+        <div class="input-field">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="modals">
+      <button class="open-sign-in btn">open sign in</button>
+
+      <div class="modal" id="sign-up-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>sign-up-modal</h3>
+            <button class="modal-close">X</button>
+          </div>
+          <div class="modal-body">this is modal body</div>
+        </div>
+      </div>
+      <div class="modal" id="sign-up-error-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>sign-up-error-modal</h3>
+            <button class="modal-close">X</button>
+          </div>
+          <div class="modal-body">this is modal body</div>
+        </div>
+      </div>
+
+      <dialog>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>dialog-modal</h3>
+            <button class="modal-close">X</button>
+          </div>
+          <div class="modal-body">this is modal body</div>
+        </div>
+      </dialog>
+    </section>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
